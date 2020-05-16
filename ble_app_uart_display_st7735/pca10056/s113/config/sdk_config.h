@@ -46,6 +46,292 @@
 #ifdef USE_APP_CONFIG
 #include "app_config.h"
 #endif
+
+
+// <h> nRF_Drivers_External 
+
+//==========================================================
+// <e> ILI9341_ENABLED - ili9341 - ILI9341 TFT controller
+//==========================================================
+#ifndef ILI9341_ENABLED
+#define ILI9341_ENABLED 0
+#endif
+// <h> SPI_CONFIGURATION - SPI configuration
+
+//==========================================================
+// <o> ILI9341_SCK_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_SCK_PIN
+#define ILI9341_SCK_PIN 25
+#endif
+
+// <o> ILI9341_MISO_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_MISO_PIN
+#define ILI9341_MISO_PIN 24
+#endif
+
+// <o> ILI9341_MOSI_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_MOSI_PIN
+#define ILI9341_MOSI_PIN 23
+#endif
+
+// <o> ILI9341_SS_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_SS_PIN
+#define ILI9341_SS_PIN 22
+#endif
+
+// <o> ILI9341_IRQ_PRIORITY  - Interrupt priority
+ 
+
+// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef ILI9341_IRQ_PRIORITY
+#define ILI9341_IRQ_PRIORITY 3
+#endif
+
+// <o> ST7735_SCK_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_SCK_PIN
+#define ST7735_SCK_PIN 25
+#endif
+
+// <o> ST7735_MISO_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_MISO_PIN
+#define ST7735_MISO_PIN 24
+#endif
+
+// <o> ST7735_MOSI_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_MOSI_PIN
+#define ST7735_MOSI_PIN 23
+#endif
+
+// <o> ST7735_SS_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_SS_PIN
+#define ST7735_SS_PIN 22
+#endif
+
+// <o> ST7735_IRQ_PRIORITY  - Interrupt priority
+ 
+
+// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef ST7735_IRQ_PRIORITY
+#define ST7735_IRQ_PRIORITY 3
+#endif
+
+// </h> 
+//==========================================================
+
+// <o> ILI9341_SPI_INSTANCE
+ 
+// <0=> 0 
+// <1=> 1 
+// <2=> 2 
+
+#ifndef ILI9341_SPI_INSTANCE
+#define ILI9341_SPI_INSTANCE 0
+#endif
+
+// <o> ILI9341_DC_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_DC_PIN
+#define ILI9341_DC_PIN 20
+#endif
+
+// <o> ILI9341_HEIGHT - ILI9341 height  <0-320> 
+
+
+#ifndef ILI9341_HEIGHT
+#define ILI9341_HEIGHT 320
+#endif
+
+// <o> ILI9341_WIDTH - ILI9341 width  <0-240> 
+
+
+#ifndef ILI9341_WIDTH
+#define ILI9341_WIDTH 240
+#endif
+
+// </e>
+
+// <e> ST7735_ENABLED - st7735 - ST7735R TFT controller
+//==========================================================
+#ifndef ST7735_ENABLED
+#define ST7735_ENABLED 1
+#endif
+// <h> SPI_CONFIGURATION - SPI configuration
+
+//==========================================================
+// <o> ILI9341_SCK_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_SCK_PIN
+#define ILI9341_SCK_PIN 25
+#endif
+
+// <o> ILI9341_MISO_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_MISO_PIN
+#define ILI9341_MISO_PIN 24
+#endif
+
+// <o> ILI9341_MOSI_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_MOSI_PIN
+#define ILI9341_MOSI_PIN 23
+#endif
+
+// <o> ILI9341_SS_PIN - Pin number  <0-47> 
+
+
+#ifndef ILI9341_SS_PIN
+#define ILI9341_SS_PIN 22
+#endif
+
+// <o> ILI9341_IRQ_PRIORITY  - Interrupt priority
+ 
+
+// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef ILI9341_IRQ_PRIORITY
+#define ILI9341_IRQ_PRIORITY 6
+#endif
+
+// <o> ST7735_SCK_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_SCK_PIN
+#define ST7735_SCK_PIN 25
+#endif
+
+// <o> ST7735_MISO_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_MISO_PIN
+#define ST7735_MISO_PIN 24
+#endif
+
+// <o> ST7735_MOSI_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_MOSI_PIN
+#define ST7735_MOSI_PIN 23
+#endif
+
+// <o> ST7735_SS_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_SS_PIN
+#define ST7735_SS_PIN 22
+#endif
+
+// <o> ST7735_IRQ_PRIORITY  - Interrupt priority
+ 
+
+// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef ST7735_IRQ_PRIORITY
+#define ST7735_IRQ_PRIORITY 6
+#endif
+
+// </h> 
+//==========================================================
+
+// <o> ST7735_SPI_INSTANCE
+ 
+// <0=> 0 
+// <1=> 1 
+// <2=> 2 
+
+#ifndef ST7735_SPI_INSTANCE
+#define ST7735_SPI_INSTANCE 1
+#endif
+
+// <o> ST7735_TAB_COLOR  - Color of the tab attached to the screen.
+ 
+// <0=> INITR_GREENTAB 
+// <1=> INITR_REDTAB 
+// <2=> INITR_BLACKTAB 
+// <3=> INITR_144GREENTAB 
+
+#ifndef ST7735_TAB_COLOR
+#define ST7735_TAB_COLOR 0
+#endif
+
+// <o> ST7735_DC_PIN - Pin number  <0-47> 
+
+
+#ifndef ST7735_DC_PIN
+#define ST7735_DC_PIN 19
+#endif
+
+// <o> ST7735_HEIGHT - ST7735 height  <0-162> 
+
+
+#ifndef ST7735_HEIGHT
+#define ST7735_HEIGHT 160
+#endif
+
+// <o> ST7735_WIDTH - ST7735 width  <0-132> 
+
+
+#ifndef ST7735_WIDTH
+#define ST7735_WIDTH 128
+#endif
+
+// </e>
+
+// </h> 
+
 // <h> Board Support 
 
 //==========================================================
@@ -3464,7 +3750,7 @@
 // <e> NRFX_SPIM_ENABLED - nrfx_spim - SPIM peripheral driver
 //==========================================================
 #ifndef NRFX_SPIM_ENABLED
-#define NRFX_SPIM_ENABLED 0
+#define NRFX_SPIM_ENABLED 1
 #endif
 // <q> NRFX_SPIM0_ENABLED  - Enable SPIM0 instance
  
@@ -3491,14 +3777,14 @@
  
 
 #ifndef NRFX_SPIM3_ENABLED
-#define NRFX_SPIM3_ENABLED 0
+#define NRFX_SPIM3_ENABLED 1
 #endif
 
 // <q> NRFX_SPIM_EXTENDED_ENABLED  - Enable extended SPIM features
  
 
 #ifndef NRFX_SPIM_EXTENDED_ENABLED
-#define NRFX_SPIM_EXTENDED_ENABLED 0
+#define NRFX_SPIM_EXTENDED_ENABLED 1
 #endif
 
 // <o> NRFX_SPIM_MISO_PULL_CFG  - MISO pin pull configuration.
@@ -6755,7 +7041,7 @@
  
 
 #ifndef HARDFAULT_HANDLER_ENABLED
-#define HARDFAULT_HANDLER_ENABLED 0
+#define HARDFAULT_HANDLER_ENABLED 1
 #endif
 
 // <e> HCI_MEM_POOL_ENABLED - hci_mem_pool - memory pool implementation used by HCI
@@ -7617,7 +7903,7 @@
  
 
 #ifndef NRF_FPRINTF_FLAG_AUTOMATIC_CR_ON_LF_ENABLED
-#define NRF_FPRINTF_FLAG_AUTOMATIC_CR_ON_LF_ENABLED 1
+#define NRF_FPRINTF_FLAG_AUTOMATIC_CR_ON_LF_ENABLED 0
 #endif
 
 // <q> NRF_FPRINTF_DOUBLE_ENABLED  - Enable IEEE-754 double precision formatting.
@@ -7665,6 +7951,51 @@
 
 #ifndef NRF_LOG_BACKEND_RTT_TX_RETRY_CNT
 #define NRF_LOG_BACKEND_RTT_TX_RETRY_CNT 3
+#endif
+
+// </e>
+
+// <e> NRF_LOG_BACKEND_UART_ENABLED - nrf_log_backend_uart - Log UART backend
+//==========================================================
+#ifndef NRF_LOG_BACKEND_UART_ENABLED
+#define NRF_LOG_BACKEND_UART_ENABLED 0
+#endif
+// <o> NRF_LOG_BACKEND_UART_TX_PIN - UART TX pin 
+#ifndef NRF_LOG_BACKEND_UART_TX_PIN
+#define NRF_LOG_BACKEND_UART_TX_PIN 6
+#endif
+
+// <o> NRF_LOG_BACKEND_UART_BAUDRATE  - Default Baudrate
+ 
+// <323584=> 1200 baud 
+// <643072=> 2400 baud 
+// <1290240=> 4800 baud 
+// <2576384=> 9600 baud 
+// <3862528=> 14400 baud 
+// <5152768=> 19200 baud 
+// <7716864=> 28800 baud 
+// <10289152=> 38400 baud 
+// <15400960=> 57600 baud 
+// <20615168=> 76800 baud 
+// <30801920=> 115200 baud 
+// <61865984=> 230400 baud 
+// <67108864=> 250000 baud 
+// <121634816=> 460800 baud 
+// <251658240=> 921600 baud 
+// <268435456=> 1000000 baud 
+
+#ifndef NRF_LOG_BACKEND_UART_BAUDRATE
+#define NRF_LOG_BACKEND_UART_BAUDRATE 30801920
+#endif
+
+// <o> NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE - Size of buffer for partially processed strings. 
+// <i> Size of the buffer is a trade-off between RAM usage and processing.
+// <i> if buffer is smaller then strings will often be fragmented.
+// <i> It is recommended to use size which will fit typical log and only the
+// <i> longer one will be fragmented.
+
+#ifndef NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE
+#define NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE 64
 #endif
 
 // </e>
