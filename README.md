@@ -1,6 +1,6 @@
 # nrf52840-display-ST7735
 
-Demo code on the Display ST7735 with Nordic nRF52840
+Demo code on the Display ST7735 with Nordic nRF52840 by using the high speed SPIM with DMA
 
 ## Example
 * Press button 1 to show the picture
